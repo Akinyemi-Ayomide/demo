@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
+
+
+* {
+  font-family: "Roboto", system-ui, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+
+}
+
+
+.inter {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.ancizar {
+  font-family: "Ancizar Sans", system-ui, sans-serif;
+}
+
+.rowdies {
+  font-family: "Rowdies", system-ui, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a.active {
+  color: #fdba74;
+}
