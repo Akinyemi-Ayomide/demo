@@ -3,9 +3,6 @@ import { Link, NavLink } from 'react-router-dom';
 import { FaWhatsapp, FaBars } from 'react-icons/fa6';
 import { IoIosArrowForward } from 'react-icons/io';
 import { FaTimes } from 'react-icons/fa';
-import collection from '../assets/collection.png';
-import about from '../assets/info.png';
-import contact from '../assets/telephone.png';
 import { GoHomeFill } from 'react-icons/go';
 import { BiSolidCategory } from 'react-icons/bi';
 import { BsFillInfoSquareFill } from 'react-icons/bs';
@@ -142,7 +139,7 @@ const Navbar = () => {
               className="flex items-center gap-3 hover:text-orange-600"
               onClick={toggleMenu}
             >
-              <img src={collection} alt="Category" className="w-5 h-5" />
+              <BiSolidCategory className="text-2xl" />
               Category
             </NavLink>
 
@@ -151,7 +148,7 @@ const Navbar = () => {
               className="flex items-center gap-3 hover:text-orange-600"
               onClick={toggleMenu}
             >
-              <img src={collection} alt="Price" className="w-5 h-5" />
+              <MdOutlinePriceChange className="text-2xl" />
               Price
             </NavLink>
 
@@ -160,7 +157,11 @@ const Navbar = () => {
               className="flex items-center gap-3 hover:text-orange-600"
               onClick={toggleMenu}
             >
-              <img src={about} alt="About" className="w-5 h-5" />
+              <BsFillInfoSquareFill
+                className={`text-2xl ${
+                  theme == 'light' ? 'text-[#00CFC1]' : 'text-black'
+                }`}
+              />
               About
             </NavLink>
 
@@ -169,12 +170,12 @@ const Navbar = () => {
               className="flex items-center gap-3 hover:text-orange-600"
               onClick={toggleMenu}
             >
-              <img src={contact} alt="Contact" className="w-5 h-5" />
+              <MdOutlineContacts className="text-2xl" />
               Contact
             </NavLink>
             <button
               onClick={toggleTheme}
-              className="flex items-center gap-2 px-3 py-2 rounded-md bg-gray-100 dark:bg-gray-800 text-sm"
+              className="flex items-center gap-2  py-2 rounded-md  text-sm"
             >
               {theme === 'light' ? (
                 <>
