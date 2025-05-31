@@ -13,7 +13,7 @@ const RootLayout = () => {
 
       {/* Main content */}
       <main
-        className={`flex-1 md:py-5 py-4 overflow-y-auto ${
+        className={`flex-1 md:py-5  overflow-y-auto ${
           theme === 'light'
             ? 'bg-[#02111B] text-[#00CFC1] shadow-[0_4px_10px_#00CFC1]'
             : 'bg-white text-black'
