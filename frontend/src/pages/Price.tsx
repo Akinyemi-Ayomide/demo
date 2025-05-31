@@ -3,7 +3,7 @@ import WeddingPrice from "../components/WeddingPrice";
 
 const Price = () => {
   return (
-    <div className=" mt-20 md:mt-40">
+    <div className=" ">
         <WeddingPrice />
         <StudioPrice />
     </div>

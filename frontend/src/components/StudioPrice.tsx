@@ -4,20 +4,20 @@ const StudioPrice = () => {
   return (
     <div className=" py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900">STUDIO <span className='text-orange-300'>PICTURES</span> </h2>
-        <p className="mt-4 text-gray-600 italic">
+        <h2 className="text-4xl font-bold ">STUDIO <span className='text-orange-300'>PICTURES</span> </h2>
+        <p className="mt-4  italic">
           Choose a plan that fits your needs.
         </p>
       </div>
 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {/* Basic Plan */}
-        <div className="hover:bg-white rounded-2xl shadow-lg p-6">
-          <h3 className="text-xl font-semibold text-gray-800">Basic</h3>
+        <div className=" rounded-2xl shadow-lg p-6">
+          <h3 className="text-xl font-semibold ">Basic</h3>
           <p className="text-3xl font-bold text-orange-300 mt-2">
             ₦9<span className="text-base font-normal">/mo</span>
           </p>
-          <ul className="mt-6 space-y-2 text-gray-600">
+          <ul className="mt-6 space-y-2 ">
             <li>
               ✔️ 1 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Esse, neque?
@@ -45,12 +45,12 @@ const StudioPrice = () => {
         </div>
 
         {/* Pro Plan */}
-        <div className=" rounded-2xl shadow-lg p-6  hover:bg-white">
-          <h3 className="text-xl font-semibold text-gray-800">Pro</h3>
+        <div className=" rounded-2xl shadow-lg p-6  ">
+          <h3 className="text-xl font-semibold ">Pro</h3>
           <p className="text-3xl font-bold text-orange-300 mt-2">
             ₦29<span className="text-base font-normal">/mo</span>
           </p>
-          <ul className="mt-6 space-y-2 text-gray-600">
+          <ul className="mt-6 space-y-2 ">
             <li>
               ✔️ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
               neque?
@@ -83,11 +83,11 @@ const StudioPrice = () => {
 
         {/* Premium Plan */}
         <div className=" rounded-2xl shadow-lg p-6">
-          <h3 className="text-xl font-semibold text-gray-800">Premium</h3>
+          <h3 className="text-xl font-semibold ">Premium</h3>
           <p className="text-3xl font-bold text-orange-300 mt-2">
             ₦49<span className="text-base font-normal">/mo</span>
           </p>
-          <ul className="mt-6 space-y-2 text-gray-600">
+          <ul className="mt-6 space-y-2 ">
             <li>
               ✔️ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse,
               neque?

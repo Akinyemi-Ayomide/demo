@@ -1,17 +1,26 @@
 import Navbar from '../components/Navbar';
-
 import { Outlet } from 'react-router-dom';
-import Push from '../components/Push';
+import { useThemeStore } from '../store/themeStore';
 
 const RootLayout = () => {
+  const { theme } = useThemeStore();
   return (
-    <div>
-      <Push />
-      <Navbar />
-      <div className="w-full min-h-screen">
-        {/* Main content area where nested routes will be rendered */}
+    <div className="flex flex-col md:flex-row md:min-h-screen">
+      {/* Sidebar */}
+      <aside className="w-full h-2 border-b border-gray-200 bg-white md:w-16 md:h-auto md:border-b-0 md:border-r">
+        <Navbar />
+      </aside>
+
+      {/* Main content */}
+      <main
+        className={`flex-1 md:py-5 py-4 overflow-y-auto ${
+          theme === 'light'
+            ? 'bg-[#02111B] text-[#00CFC1] shadow-[0_4px_10px_#00CFC1]'
+            : 'bg-white text-black'
+        }`}
+      >
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 };

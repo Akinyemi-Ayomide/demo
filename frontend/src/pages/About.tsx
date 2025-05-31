@@ -9,72 +9,75 @@ import a from '../assets/a.jpeg';
 const About = () => {
   return (
     <>
-      <div className="px-4 md:px-10 md:p-10 mt-20 md:mt-40  md:max-w-6xl mx-auto">
+      <div className="px-4 md:px-10   md:max-w-6xl mx-auto">
         {/* About Text & Personal Info */}
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-10'>
-          <div><img src={a} alt="" /></div><motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex flex-col gap-6 text-black"
-        >
-          {/* Left: About Description */}
-          <div className="md:col-span-8">
-            <h1 className="text-2xl font-bold capitalize">Photographer</h1>
-            <p className="mt-2 text-black leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-              fugiat. Nisi beatae molestiae amet. Voluptatem repellendus minima
-              nemo unde dolorem omnis atque hic doloremque dolore a qui
-              consectetur voluptatum blanditiis porro odit, in, repellat dicta
-              vel ad cum eum! Ipsa sit corporis ducimus, provident ipsam
-              quaerat, vero corrupti voluptas earum voluptatibus fugit minima
-              aspernatur praesentium natus, aliquam facilis numquam? Tenetur
-              delectus iusto excepturi impedit maiores mollitia, laborum
-              nesciunt vel magnam esse, repudiandae obcaecati accusamus aut ipsa
-              dignissimos sapiente aperiam reprehenderit similique! Incidunt
-              distinctio nisi debitis a mollitia. Officiis odit ad eos
-              doloremque rem, culpa error libero sapiente hic assumenda
-              doloribus.
-            </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          <div>
+            <img src={a} alt="" />
           </div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col gap-6 "
+          >
+            {/* Left: About Description */}
+            <div className="md:col-span-8">
+              <h1 className="text-2xl font-bold capitalize">Photographer</h1>
+              <p className="mt-2  leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                fugiat. Nisi beatae molestiae amet. Voluptatem repellendus
+                minima nemo unde dolorem omnis atque hic doloremque dolore a qui
+                consectetur voluptatum blanditiis porro odit, in, repellat dicta
+                vel ad cum eum! Ipsa sit corporis ducimus, provident ipsam
+                quaerat, vero corrupti voluptas earum voluptatibus fugit minima
+                aspernatur praesentium natus, aliquam facilis numquam? Tenetur
+                delectus iusto excepturi impedit maiores mollitia, laborum
+                nesciunt vel magnam esse, repudiandae obcaecati accusamus aut
+                ipsa dignissimos sapiente aperiam reprehenderit similique!
+                Incidunt distinctio nisi debitis a mollitia. Officiis odit ad
+                eos doloremque rem, culpa error libero sapiente hic assumenda
+                doloribus.
+              </p>
+            </div>
 
-          {/* Right: Personal Info */}
-          <div className="md:col-span-4 rounded-lg space-y-2">
-            <h1 className="text-2xl font-bold capitalize mb-2">
-              Personal Information
-            </h1>
-            <p>
-              <span className="font-bold italic">Name:</span> Lorem ipsum dolor
-              sit amet.
-            </p>
-            <p>
-              <span className="font-bold italic">Residence:</span> Lorem ipsum
-              dolor sit amet.
-            </p>
-            <p>
-              <span className="font-bold italic">Email:</span> Lorem ipsum dolor
-              sit amet.
-            </p>
-            <p>
-              <span className="font-bold italic">Phone:</span> Lorem ipsum dolor
-              sit amet.
-            </p>
-            <p>
-              <span className="font-bold italic">Freelance:</span> Lorem ipsum
-              dolor sit amet.
-            </p>
+            {/* Right: Personal Info */}
+            <div className="md:col-span-4 rounded-lg space-y-2">
+              <h1 className="text-2xl font-bold capitalize mb-2">
+                Personal Information
+              </h1>
+              <p>
+                <span className="font-bold italic">Name:</span> Lorem ipsum
+                dolor sit amet.
+              </p>
+              <p>
+                <span className="font-bold italic">Residence:</span> Lorem ipsum
+                dolor sit amet.
+              </p>
+              <p>
+                <span className="font-bold italic">Email:</span> Lorem ipsum
+                dolor sit amet.
+              </p>
+              <p>
+                <span className="font-bold italic">Phone:</span> Lorem ipsum
+                dolor sit amet.
+              </p>
+              <p>
+                <span className="font-bold italic">Freelance:</span> Lorem ipsum
+                dolor sit amet.
+              </p>
 
-            <a href="/Akinyemi_Ayomide.pdf" download="">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="py-2 px-4 mt-3 border border-black hover:bg-black text-black hover:text-white transition duration-300"
-              >
-                Download Resume
-              </motion.button>
-            </a>
-          </div>
-        </motion.div>
+              <a href="/Akinyemi_Ayomide.pdf" download="">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="py-2 px-4 mt-3 border border-black hover:bg-black text-black hover:text-white transition duration-300"
+                >
+                  Download Resume
+                </motion.button>
+              </a>
+            </div>
+          </motion.div>
         </div>
 
         {/* Skills Grid */}

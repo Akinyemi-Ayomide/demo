@@ -12,7 +12,7 @@ const Contact = () => {
     <div>
       <div className="container mx-auto px-4 mb-10 ">
         {/* Contact Info */}
-        <div className="grid mt-40 md:grid-cols-3 gap-6">
+        <div className="grid  md:grid-cols-3 gap-6">
           {[ 
             {
               icon: <FaMapMarkerAlt className="w-6 h-6 md:w-10 md:h-10 text-gray-500" />,

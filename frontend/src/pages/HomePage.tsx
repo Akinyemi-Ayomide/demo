@@ -1,10 +1,12 @@
-import MainSlider from '../components/HomeCom/MainSlider';
+import MainScreen from '../components/HomeCom/MainScreen';
+
 
 
 const HomePage = () => {
   return (
     <div>
-      <MainSlider />
+      
+      <MainScreen />
      
     </div>
   );
